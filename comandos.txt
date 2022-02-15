@@ -1,0 +1,10 @@
+React Commands
+
+//Crear un nuevo proyecto react
+$npx create-react-app <name project>
+
+//Correr un proyecto
+npm start
+
+
+Ctrl + space --autocompletado
