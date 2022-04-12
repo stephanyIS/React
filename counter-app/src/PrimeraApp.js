@@ -5,9 +5,10 @@ import PropTypes from 'prop-types';
 
 //Funtional components
 const PrimeraApp = ({ saludo="Hello", edad, subtitulo} ) => {
-    const object = {"nombre": "Stephany", "edad":23};
+  /* 
+   const object = {"nombre": "Stephany", "edad":23};
 
-    const habilitado = true;
+   const habilitado = true;
    return (
      <>
          <h1>{saludo}</h1>
@@ -18,6 +19,15 @@ const PrimeraApp = ({ saludo="Hello", edad, subtitulo} ) => {
          <p>lorem lorem lorem</p>
      </>
    );   
+   */
+
+   return (
+     <>
+         <h1>{saludo} !!</h1>
+         <p>{subtitulo}</p>
+     </>
+   );   
+
 }
 
 PrimeraApp.propTypes = {
