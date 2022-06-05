@@ -1,0 +1,19 @@
+.color-span{
+   font-size: 0.7em;
+   color: #777a7e !important;
+}
+
+.color-error{
+    font-size: 0.7em;
+    color: #862626 !important;
+ }
+
+ .color-white-font{
+    color: white;
+ }
+
+ .color-white-backgound{
+   background-color: white;
+   padding: 2em;
+   margin-top: 1em;
+}
