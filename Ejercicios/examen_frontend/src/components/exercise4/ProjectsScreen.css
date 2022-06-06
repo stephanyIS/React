@@ -1,0 +1,40 @@
+.color-white-font{
+    color: white;
+    padding-bottom: 0.5;
+ }
+
+ .card-style{
+    color: black !important;
+ }
+
+ .card{
+   width: 45%;
+   margin: 1%;
+ }
+
+ .width-input{
+   width: 100%;
+ }
+
+ .width-btn{
+   width: 100%;
+ }
+
+ .font-size-span{
+    font-size: 1.1rem;
+ }
+ 
+ .div-img{
+   max-width: calc(100% - 25px); 
+   background-color: #212529 ;
+ }
+
+ .spinner{
+   padding-top: 1rem;
+   width: 10rem !important;
+   height: 10rem !important;
+   margin: 100px;
+ }
+
+ 
+

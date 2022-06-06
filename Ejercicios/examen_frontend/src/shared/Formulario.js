@@ -66,7 +66,7 @@ export const Formulario = () => {
 
     return (
         <>         
-            <h2 class="color-white-font">Apply for job</h2> 
+            <h2 className="color-white-font">Apply for job</h2> 
             <div className="color-white-backgound">
                 <form onSubmit={handleSubmit}>  
                     <div className="mb-3 row">

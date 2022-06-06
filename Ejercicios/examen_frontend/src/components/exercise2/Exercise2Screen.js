@@ -9,7 +9,7 @@ export const Exercise2Screen = () => {
         <h1 className="pb-1">Habilidades de Framework Javascript</h1>
         <hr />
       </div>
-      <div class="row">
+      <div className="row">
         <Formulario />
       </div>
     </> 

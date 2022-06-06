@@ -1,7 +1,16 @@
 import { Link, NavLink } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {Dropdown, DropdownItem, DropdownMenu, DropdownToggle} from 'reactstrap';
+import { useState } from 'react';
+import './Navbar.css';
 
 export const Navbar = () => {
+
+    const [dropdown, setDropdown] = useState(false);
+
+    const openCloseDropdown = () => {
+        setDropdown(!dropdown);
+    }
 
 
     return (
@@ -19,9 +28,23 @@ export const Navbar = () => {
                          <NavLink className= { ({ isActive }) => 'nav-item nav-link ' + (isActive ? 'active' : '')} to="/exercise3">
                              Javascript avanzado (3)
                          </NavLink>
-                         <NavLink className= { ({ isActive }) => 'nav-item nav-link ' + (isActive ? 'active' : '')} to="/exercise4">
-                             Javascript avanzado (4)
-                         </NavLink>                  
+                         <Dropdown isOpen={dropdown} toggle={openCloseDropdown}>
+                            <DropdownToggle caret>
+                                Javascript avanzado (4)
+                            </DropdownToggle>
+                            <DropdownMenu>
+                                <DropdownItem>
+                                    <NavLink className= { ({ isActive }) => 'drop-style nav-item nav-link ' + (isActive ? 'active' : '')} to="/exercise4-platform">
+                                        Listado de plataformas
+                                    </NavLink>    
+                                </DropdownItem>
+                                <DropdownItem>
+                                    <NavLink className= { ({ isActive }) => 'drop-style nav-item nav-link ' + (isActive ? 'active' : '')} to="/exercise4-projects">
+                                        Buscar proyectos
+                                    </NavLink>    
+                                </DropdownItem>
+                             </DropdownMenu>
+                        </Dropdown>                         
                      </div>
                  </div>
              </div>        

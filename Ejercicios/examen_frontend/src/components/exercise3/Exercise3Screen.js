@@ -29,8 +29,8 @@ export const Exercise3Screen = () => {
               img.status === 'empty' &&
               <div className="col-sm-12 box-img">
                   <div className="div-img">
-                    <div class="spinner spinner-border text-light" role="status">
-                      <span class="visually-hidden">Loading...</span>
+                    <div className="spinner spinner-border text-light" role="status">
+                      <span className="visually-hidden">Loading...</span>
                     </div>
                   </div>
               </div>
